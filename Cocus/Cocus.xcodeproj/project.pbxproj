@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		299CABAF25153FA200BE7D5F /* Connections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299CABAE25153FA200BE7D5F /* Connections.swift */; };
+		299CABB22515444500BE7D5F /* Way.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299CABB12515444500BE7D5F /* Way.swift */; };
+		299CABB42515445100BE7D5F /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299CABB32515445100BE7D5F /* Coordinate.swift */; };
+		299CABB6251544D300BE7D5F /* DataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299CABB5251544D300BE7D5F /* DataModelTests.swift */; };
 		29E26C7D2513FCEE00697DAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E26C7C2513FCEE00697DAB /* AppDelegate.swift */; };
 		29E26C7F2513FCEE00697DAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E26C7E2513FCEE00697DAB /* SceneDelegate.swift */; };
 		29E26C862513FCF000697DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E26C852513FCF000697DAB /* Assets.xcassets */; };
@@ -29,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		299CABAE25153FA200BE7D5F /* Connections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connections.swift; sourceTree = "<group>"; };
+		299CABB12515444500BE7D5F /* Way.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Way.swift; sourceTree = "<group>"; };
+		299CABB32515445100BE7D5F /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		299CABB5251544D300BE7D5F /* DataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelTests.swift; sourceTree = "<group>"; };
 		29E26C792513FCEE00697DAB /* Cocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E26C7C2513FCEE00697DAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29E26C7E2513FCEE00697DAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +70,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		299CABB025153FA900BE7D5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				299CABAE25153FA200BE7D5F /* Connections.swift */,
+				299CABB12515444500BE7D5F /* Way.swift */,
+				299CABB32515445100BE7D5F /* Coordinate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		29E26C702513FCEE00697DAB = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				29E26C932513FCF000697DAB /* CocusTests.swift */,
+				299CABB5251544D300BE7D5F /* DataModelTests.swift */,
 				29E26C952513FCF000697DAB /* Info.plist */,
 			);
 			path = CocusTests;
@@ -114,8 +133,9 @@
 		29E26CA12513FE5300697DAB /* Context */ = {
 			isa = PBXGroup;
 			children = (
-				29E26CA52513FFB400697DAB /* View Model */,
+				299CABB025153FA900BE7D5F /* Model */,
 				29E26CA22513FF0A00697DAB /* View */,
+				29E26CA52513FFB400697DAB /* View Model */,
 			);
 			path = Context;
 			sourceTree = "<group>";
@@ -255,8 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				299CABB42515445100BE7D5F /* Coordinate.swift in Sources */,
 				29E26CB0251401C500697DAB /* TripPlannerVC.swift in Sources */,
 				29E26C7D2513FCEE00697DAB /* AppDelegate.swift in Sources */,
+				299CABAF25153FA200BE7D5F /* Connections.swift in Sources */,
+				299CABB22515444500BE7D5F /* Way.swift in Sources */,
 				29E26CA42513FFB000697DAB /* TripPlannerViewModel.swift in Sources */,
 				29E26C7F2513FCEE00697DAB /* SceneDelegate.swift in Sources */,
 			);
@@ -267,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29E26C942513FCF000697DAB /* CocusTests.swift in Sources */,
+				299CABB6251544D300BE7D5F /* DataModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
