@@ -35,7 +35,7 @@ class DataModelTests: XCTestCase {
         let from = Coordinate(lat: -33.865143, long: 151.2099)
         let to = Coordinate(lat: -33.918861, long: 18.4233)
         let way = Way(from: from, to: to)
-        let connection = Connections(coordinates: way, to: "Cape Town", price: 200, from: "Sydney")
+        let connection = Connection(coordinates: way, to: "Cape Town", price: 200, from: "Sydney")
         XCTAssertEqual(connection.coordinates.from.lat, -33.865143)
         XCTAssertEqual(connection.coordinates.from.long, 151.2099)
         XCTAssertEqual(connection.coordinates.to.lat, -33.918861)

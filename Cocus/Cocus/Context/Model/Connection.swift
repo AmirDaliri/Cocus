@@ -1,5 +1,5 @@
 //
-//  Connections.swift
+//  Connection.swift
 //  Cocus
 //
 //  Created by Amir Daliri on 18.09.2020.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Connections: Equatable {
+struct Connection: Equatable {
     
     var coordinates: Way
     var to: String
