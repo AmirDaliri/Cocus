@@ -13,6 +13,7 @@
 		299CABB6251544D300BE7D5F /* DataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299CABB5251544D300BE7D5F /* DataModelTests.swift */; };
 		299CABB8251658BB00BE7D5F /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299CABB7251658BB00BE7D5F /* NetworkLayer.swift */; };
 		299CABBB2516672200BE7D5F /* NetworkLayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299CABBA2516672200BE7D5F /* NetworkLayerProtocol.swift */; };
+		299CABBD25166F5800BE7D5F /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299CABBC25166F5800BE7D5F /* UIExtensions.swift */; };
 		29E26C7D2513FCEE00697DAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E26C7C2513FCEE00697DAB /* AppDelegate.swift */; };
 		29E26C7F2513FCEE00697DAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E26C7E2513FCEE00697DAB /* SceneDelegate.swift */; };
 		29E26C862513FCF000697DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E26C852513FCF000697DAB /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		299CABB5251544D300BE7D5F /* DataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelTests.swift; sourceTree = "<group>"; };
 		299CABB7251658BB00BE7D5F /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		299CABBA2516672200BE7D5F /* NetworkLayerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerProtocol.swift; sourceTree = "<group>"; };
+		299CABBC25166F5800BE7D5F /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		29E26C792513FCEE00697DAB /* Cocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E26C7C2513FCEE00697DAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29E26C7E2513FCEE00697DAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
+		299CABBE2516709A00BE7D5F /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				299CABBC25166F5800BE7D5F /* UIExtensions.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
 		29E26C702513FCEE00697DAB = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +130,7 @@
 				29E26CA12513FE5300697DAB /* Context */,
 				29E26CA02513FE4300697DAB /* Resources */,
 				29E26CB9251404F500697DAB /* Storyboard */,
+				299CABBE2516709A00BE7D5F /* Misc */,
 				29E26CBA2514050600697DAB /* Suppporting File */,
 			);
 			path = Cocus;
@@ -292,6 +303,7 @@
 				299CABB42515445100BE7D5F /* Coordinate.swift in Sources */,
 				29E26CB0251401C500697DAB /* TripPlannerVC.swift in Sources */,
 				29E26C7D2513FCEE00697DAB /* AppDelegate.swift in Sources */,
+				299CABBD25166F5800BE7D5F /* UIExtensions.swift in Sources */,
 				299CABBB2516672200BE7D5F /* NetworkLayerProtocol.swift in Sources */,
 				299CABAF25153FA200BE7D5F /* Connection.swift in Sources */,
 				299CABB8251658BB00BE7D5F /* NetworkLayer.swift in Sources */,
