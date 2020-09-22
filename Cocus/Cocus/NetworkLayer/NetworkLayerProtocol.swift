@@ -9,6 +9,6 @@
 import Foundation
 
 protocol NetworkLayerProtocol {
-    func getLocalConnection(completionHandler: ([Connection]?,_ errorMessage: String?)->())
-    func getOnlineConnections(completionHandler: @escaping ([Connection]?,_ errorMessage: String?)->())
+    func getLocalConnection(completionHandler: (([Connection],[Country])?,_ errorMessage: String?)->())
+    func getOnlineConnections(completionHandler: @escaping (([Connection],[Country])?,_ errorMessage: String?)->())
 }

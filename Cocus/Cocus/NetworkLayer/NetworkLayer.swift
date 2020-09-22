@@ -10,10 +10,11 @@ import Foundation
 
 class NetworkLayer: NetworkLayerProtocol {
     
-    private let baseURL = "https://raw.githubusercontent.com/TuiMobilityHub/ios-code-challenge/master/connections.json"
+    private let baseURL = "https://raw.githubusercontent.com/TuiMobilityHub/ios-code-challenge/master/"
+    private let connectionUri = "connections.json"
 
-    func getOnlineConnections(completionHandler: @escaping ([Connection]?,_ errString: String?)->()) {
-        guard let url = URL(string: baseURL) else {
+    func getOnlineConnections(completionHandler: @escaping (([Connection],[Country])?,_ errString: String?)->()) {
+        guard let url = URL(string: "\(baseURL)\(connectionUri)") else {
             completionHandler(nil, "request url is not valid")
             return
         }
@@ -40,7 +41,7 @@ class NetworkLayer: NetworkLayerProtocol {
         
     }
     
-    func getLocalConnection(completionHandler: ([Connection]?,_ errString: String?)->()) {
+    func getLocalConnection(completionHandler: (([Connection],[Country])?,_ errString: String?)->()) {
         guard let path = Bundle.main.path(forResource: "connections", ofType: "json") else {
             completionHandler(nil, "can't find any file with 'connections.json' name")
             return
@@ -61,23 +62,34 @@ class NetworkLayer: NetworkLayerProtocol {
         }
     }
     
-    private func parsConnectionDictionary(dict: [[String: Any]]) -> [Connection] {
-        var connections = [Connection]()
+    private func parsConnectionDictionary(dict: [[String: Any]]) -> ([Connection], [Country]) {
         
+        var connections = [Connection]()
+        var countries = [Country]()
+
         for connection in dict {
             guard let coordinates = connection["coordinates"] as? [String: Any],
-                   let from = coordinates["from"] as? [String: Any],
-                   let to = coordinates["to"] as? [String: Any] else{
-                       continue
-               }
+                let from = coordinates["from"] as? [String: Any],
+                let to = coordinates["to"] as? [String: Any] else{
+                    continue
+            }
+            
             let fromObject = Coordinate(lat: from["lat"] as! Double, long: from["long"] as! Double)
             let toObject = Coordinate(lat: to["lat"] as! Double, long: to["long"] as! Double)
-            let way = Way(from: fromObject, to: toObject)
-            let connection = Connection(coordinates: way, to: connection["to"] as! String, price: connection["price"] as! Int, from: connection["from"] as! String)
+            let fromCountry = Country(name: connection["from"] as! String, coordinate: fromObject)
+            let toCountry = Country(name: connection["to"] as! String, coordinate: toObject)            
+            let connection = Connection(from: fromCountry, to: toCountry, price: connection["price"] as! Int)
             
+            if !countries.contains(fromCountry) {
+                countries.append(fromCountry)
+            }
+            
+            if !countries.contains(toCountry) {
+                countries.append(toCountry)
+            }
             connections.append(connection)
         }
-        return connections
+        return (connections, countries)
     }
     
 }

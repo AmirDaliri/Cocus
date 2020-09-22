@@ -10,8 +10,7 @@ import Foundation
 
 struct Connection: Equatable {
     
-    var coordinates: Way
-    var to: String
+    var from: Country
+    var to: Country
     var price: Int
-    var from: String
 }

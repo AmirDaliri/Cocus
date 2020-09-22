@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		299CABAF25153FA200BE7D5F /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299CABAE25153FA200BE7D5F /* Connection.swift */; };
-		299CABB22515444500BE7D5F /* Way.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299CABB12515444500BE7D5F /* Way.swift */; };
 		299CABB42515445100BE7D5F /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299CABB32515445100BE7D5F /* Coordinate.swift */; };
 		299CABB6251544D300BE7D5F /* DataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299CABB5251544D300BE7D5F /* DataModelTests.swift */; };
 		299CABB8251658BB00BE7D5F /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299CABB7251658BB00BE7D5F /* NetworkLayer.swift */; };
 		299CABBB2516672200BE7D5F /* NetworkLayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299CABBA2516672200BE7D5F /* NetworkLayerProtocol.swift */; };
 		299CABBD25166F5800BE7D5F /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299CABBC25166F5800BE7D5F /* UIExtensions.swift */; };
+		299CABC02516726C00BE7D5F /* WeightedGraphNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299CABBF2516726C00BE7D5F /* WeightedGraphNode.swift */; };
+		299CABC22516760E00BE7D5F /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299CABC12516760E00BE7D5F /* Country.swift */; };
+		29CDC0D625193F6000A06794 /* AutoCompleteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CDC0D525193F5F00A06794 /* AutoCompleteComponent.swift */; };
 		29E26C7D2513FCEE00697DAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E26C7C2513FCEE00697DAB /* AppDelegate.swift */; };
 		29E26C7F2513FCEE00697DAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E26C7E2513FCEE00697DAB /* SceneDelegate.swift */; };
 		29E26C862513FCF000697DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E26C852513FCF000697DAB /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 		29E26CB0251401C500697DAB /* TripPlannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E26CAE251401C500697DAB /* TripPlannerVC.swift */; };
 		29E26CB62514045800697DAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E26C872513FCF000697DAB /* LaunchScreen.storyboard */; };
 		29E26CB82514049700697DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E26CB72514049700697DAB /* Main.storyboard */; };
+		29EA8B992516815200F026A7 /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA8B982516815200F026A7 /* NetworkLayerTests.swift */; };
+		29EA8B9B2516819900F026A7 /* FakeNetworkLayerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA8B9A2516819900F026A7 /* FakeNetworkLayerRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +41,14 @@
 
 /* Begin PBXFileReference section */
 		299CABAE25153FA200BE7D5F /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
-		299CABB12515444500BE7D5F /* Way.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Way.swift; sourceTree = "<group>"; };
 		299CABB32515445100BE7D5F /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		299CABB5251544D300BE7D5F /* DataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelTests.swift; sourceTree = "<group>"; };
 		299CABB7251658BB00BE7D5F /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		299CABBA2516672200BE7D5F /* NetworkLayerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerProtocol.swift; sourceTree = "<group>"; };
 		299CABBC25166F5800BE7D5F /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		299CABBF2516726C00BE7D5F /* WeightedGraphNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightedGraphNode.swift; sourceTree = "<group>"; };
+		299CABC12516760E00BE7D5F /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		29CDC0D525193F5F00A06794 /* AutoCompleteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteComponent.swift; sourceTree = "<group>"; };
 		29E26C792513FCEE00697DAB /* Cocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E26C7C2513FCEE00697DAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29E26C7E2513FCEE00697DAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +62,8 @@
 		29E26CA32513FFB000697DAB /* TripPlannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPlannerViewModel.swift; sourceTree = "<group>"; };
 		29E26CAE251401C500697DAB /* TripPlannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPlannerVC.swift; sourceTree = "<group>"; };
 		29E26CB72514049700697DAB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		29EA8B982516815200F026A7 /* NetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerTests.swift; sourceTree = "<group>"; };
+		29EA8B9A2516819900F026A7 /* FakeNetworkLayerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkLayerRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				299CABAE25153FA200BE7D5F /* Connection.swift */,
-				299CABB12515444500BE7D5F /* Way.swift */,
+				299CABC12516760E00BE7D5F /* Country.swift */,
 				299CABB32515445100BE7D5F /* Coordinate.swift */,
+				299CABBF2516726C00BE7D5F /* WeightedGraphNode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				299CABBC25166F5800BE7D5F /* UIExtensions.swift */,
+				29CDC0D525193F5F00A06794 /* AutoCompleteComponent.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -141,6 +151,8 @@
 			children = (
 				29E26C932513FCF000697DAB /* CocusTests.swift */,
 				299CABB5251544D300BE7D5F /* DataModelTests.swift */,
+				29EA8B982516815200F026A7 /* NetworkLayerTests.swift */,
+				29EA8B9A2516819900F026A7 /* FakeNetworkLayerRequest.swift */,
 				29E26C952513FCF000697DAB /* Info.plist */,
 			);
 			path = CocusTests;
@@ -248,6 +260,7 @@
 				TargetAttributes = {
 					29E26C782513FCEE00697DAB = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 					29E26C8E2513FCF000697DAB = {
 						CreatedOnToolsVersion = 11.7;
@@ -301,15 +314,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				299CABB42515445100BE7D5F /* Coordinate.swift in Sources */,
+				299CABC02516726C00BE7D5F /* WeightedGraphNode.swift in Sources */,
 				29E26CB0251401C500697DAB /* TripPlannerVC.swift in Sources */,
 				29E26C7D2513FCEE00697DAB /* AppDelegate.swift in Sources */,
+				299CABC22516760E00BE7D5F /* Country.swift in Sources */,
 				299CABBD25166F5800BE7D5F /* UIExtensions.swift in Sources */,
 				299CABBB2516672200BE7D5F /* NetworkLayerProtocol.swift in Sources */,
 				299CABAF25153FA200BE7D5F /* Connection.swift in Sources */,
 				299CABB8251658BB00BE7D5F /* NetworkLayer.swift in Sources */,
-				299CABB22515444500BE7D5F /* Way.swift in Sources */,
 				29E26CA42513FFB000697DAB /* TripPlannerViewModel.swift in Sources */,
 				29E26C7F2513FCEE00697DAB /* SceneDelegate.swift in Sources */,
+				29CDC0D625193F6000A06794 /* AutoCompleteComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +334,8 @@
 			files = (
 				29E26C942513FCF000697DAB /* CocusTests.swift in Sources */,
 				299CABB6251544D300BE7D5F /* DataModelTests.swift in Sources */,
+				29EA8B992516815200F026A7 /* NetworkLayerTests.swift in Sources */,
+				29EA8B9B2516819900F026A7 /* FakeNetworkLayerRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,14 +482,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5L77BNLJ3U;
 				INFOPLIST_FILE = "Cocus/Suppporting File/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Cocus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -484,14 +501,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5L77BNLJ3U;
 				INFOPLIST_FILE = "Cocus/Suppporting File/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Cocus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
